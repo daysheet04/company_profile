@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title description">
+  <title id="title">Product image placeholder</title>
+  <desc id="description">Replace this file or update the image path in page.tsx.</desc>
+  <rect width="1600" height="1000" fill="#dfe5e2"/>
+  <path d="M0 820C310 705 520 925 825 815s520-10 775-125v310H0Z" fill="#c6d0cc"/>
+  <circle cx="1285" cy="205" r="245" fill="#eef1ef"/>
+  <circle cx="1285" cy="205" r="150" fill="none" stroke="#9da9a5" stroke-width="2"/>
+  <path d="M245 315h655v390H245z" fill="#f7f5ef" stroke="#7d8986" stroke-width="2"/>
+  <path d="M245 315h655v62H245z" fill="#12262b"/>
+  <circle cx="285" cy="346" r="10" fill="#71d3c8"/>
+  <path d="M285 425h135v220H285zm170 0h395v92H455zm0 122h395v98H455z" fill="#e1e5df"/>
+  <text x="245" y="770" fill="#12262b" font-family="Arial, sans-serif" font-size="28" font-weight="700">PRODUCT IMAGE</text>
+  <text x="245" y="812" fill="#6a7774" font-family="Arial, sans-serif" font-size="18">REPLACE WITH 1600 × 1000 IMAGE</text>
+</svg>

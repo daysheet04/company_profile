@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title description">
+  <title id="title">Client portrait placeholder</title>
+  <desc id="description">Replace this file or update the testimonial image path.</desc>
+  <rect width="900" height="1100" fill="#dfe5e2"/>
+  <circle cx="450" cy="390" r="185" fill="#aab6b2"/>
+  <path d="M125 1100c24-290 138-440 325-440s301 150 325 440" fill="#84928e"/>
+  <text x="450" y="1010" text-anchor="middle" fill="#23373b" font-family="Arial, sans-serif" font-size="24" font-weight="700">CLIENT PHOTO</text>
+  <text x="450" y="1050" text-anchor="middle" fill="#687572" font-family="Arial, sans-serif" font-size="16">REPLACE IMAGE</text>
+</svg>

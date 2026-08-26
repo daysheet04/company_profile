@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" role="img" aria-labelledby="title description">
+  <title id="title">Client logo placeholder</title>
+  <desc id="description">Replace this file or update the client logo path.</desc>
+  <rect width="500" height="220" fill="none"/>
+  <circle cx="110" cy="110" r="48" fill="none" stroke="#61706d" stroke-width="3"/>
+  <path d="M89 110h42M110 89v42" stroke="#61706d" stroke-width="3"/>
+  <text x="180" y="105" fill="#26393d" font-family="Arial, sans-serif" font-size="28" font-weight="700">CLIENT LOGO</text>
+  <text x="180" y="137" fill="#75817f" font-family="Arial, sans-serif" font-size="15">REPLACE IMAGE</text>
+</svg>
