@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { FormEvent, PointerEvent as ReactPointerEvent } from "react";
 import { portofolioKustom, produkTemplate } from "./data-produk";
 import type { PortofolioKustom, ProdukTemplate } from "./data-produk";
+import { brandKlien } from "./data-brand";
 
 const gambarHero = "/gambarhome.png";
 
@@ -64,19 +65,6 @@ const testimoni = [
     rating: "5.0",
     isi: "Sistem jadwal yang dibuat sesuai dengan yang diharapkan, sangat puas dengan hasilnya",
   },
-];
-
-const brandKlien = [
-  { nama: "Bakso Goda", gambar: "/brand/brand_baksogoda.jpg" },
-  { nama: "PT Bintang Service Management", gambar: "/brand/brand_bsm.png" },
-  { nama: "Bulmatchic", gambar: "/brand/brand_bulmatchic.png" },
-  { nama: "PT Karya Digital Harmoni", gambar: "/brand/brand_fayastudio.png" },
-  { nama: "HSS Apple Store", gambar: "/brand/brand_hssapple.jpg" },
-  { nama: "iPhone Salatiga", gambar: "/brand/brand_iphonesalatiga2.png" },
-  { nama: "Kementrian Kelautan dan Perikanan", gambar: "/brand/brand_kelautan.png" },
-  { nama: "Marola Card", gambar: "/brand/brand_marolacard.jpg" },
-  { nama: "PT Paragon Technology and Innovation", gambar: "/brand/brand_paragon.png" },
-  { nama: "The Pesaren Ubud", gambar: "/brand/brand_pesaren.png" },
 ];
 
 function Panah({ arah = "kanan" }: { arah?: "kanan" | "kiri" | "atas" }) {
