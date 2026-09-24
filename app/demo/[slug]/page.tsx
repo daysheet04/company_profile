@@ -7,7 +7,7 @@ type PropertiHalaman = { params: Promise<{ slug: string }> };
 
 function LogoDaysheet() {
   // eslint-disable-next-line @next/next/no-img-element
-  return <img className="logo-asli" src="/logo-daysheet.png" alt="Logo Daysheet" width="46" height="46" />;
+  return <img className="logo-asli" src="/optimized/logo-daysheet-96.webp" srcSet="/optimized/logo-daysheet-96.webp 1x, /optimized/logo-daysheet-192.webp 2x" alt="Logo Daysheet" width="46" height="46" />;
 }
 
 function PanahKiri() {

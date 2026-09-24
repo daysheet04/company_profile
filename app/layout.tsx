@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     google: "i37eE7r4YsBSh5h3peEClKV-mdhfqZN-r0omO828B9A",
   },
   icons: {
-    icon: [{ url: "/logo-daysheet.png", type: "image/png" }],
-    shortcut: "/logo-daysheet.png",
-    apple: "/logo-daysheet.png",
+    icon: [{ url: "/optimized/logo-daysheet-192.png", type: "image/png" }],
+    shortcut: "/optimized/logo-daysheet-192.png",
+    apple: "/optimized/logo-daysheet-192.png",
   },
   other: { "codex-preview": "development" },
   openGraph: {
@@ -31,5 +31,12 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="id"><body>{children}<MindAI /></body></html>;
+  return (
+    <html lang="id">
+      <head>
+        <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+      </head>
+      <body>{children}<MindAI /></body>
+    </html>
+  );
 }
