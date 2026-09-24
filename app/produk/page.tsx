@@ -45,7 +45,7 @@ export default function HalamanProduk() {
             <article id={item.slug} key={item.slug}>
               <div className="visual-detail-produk">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                {gambar ? <img src={gambarWebp(gambar, 480)} srcSet={srcSetWebp(gambar, [480, 960])} sizes="(max-width: 760px) calc(100vw - 48px), 45vw" alt={item.nama} width="960" height="600" loading="lazy" decoding="async" /> : <div className="media-kosong"><IkonGambar /><span>Gambar {item.nama}</span></div>}
+                {gambar ? <img src={gambarWebp(gambar, 480)} srcSet={srcSetWebp(gambar, [320, 480, 640, 720, 960])} sizes="(max-width: 760px) calc(100vw - 48px), 45vw" alt={item.nama} width="960" height="600" loading="lazy" decoding="async" /> : <div className="media-kosong"><IkonGambar /><span>Gambar {item.nama}</span></div>}
               </div>
               <div className="salinan-detail-produk">
                 <div className="meta-detail-produk"><span>{item.nomor} / 05</span><span>{item.kategori}</span>{indeks < 3 && <b>Best seller #{indeks + 1}</b>}</div>

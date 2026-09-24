@@ -7,17 +7,17 @@ const publicDir = path.join(root, "public");
 const outputDir = path.join(publicDir, "optimized");
 
 const images = [
-  { file: "hero-chaos-spreadsheet.png", widths: [640, 960, 1280], quality: 78 },
-  { file: "gambarhome.png", widths: [480, 960], quality: 82 },
-  { file: "Financev3.png", widths: [480, 960], quality: 84 },
-  { file: "f&b.png", widths: [480, 960], quality: 84 },
-  { file: "produk1.png", widths: [480, 960], quality: 84 },
-  { file: "kementrian1.png", widths: [480, 960], quality: 84 },
-  { file: "pas.png", widths: [480, 960], quality: 84 },
-  { file: "nadya.png", widths: [480, 960], quality: 84 },
-  { file: "forbitask.png", widths: [480, 960], quality: 84 },
-  { file: "proyek.png", widths: [480, 960], quality: 84 },
-  { file: "simple.png", widths: [480, 960], quality: 84 },
+  { file: "hero-chaos-spreadsheet.png", widths: [480, 640, 720, 960, 1280], quality: 78 },
+  { file: "gambarhome.png", widths: [320, 480, 640, 720, 960], quality: 82 },
+  { file: "Financev3.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "f&b.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "produk1.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "kementrian1.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "pas.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "nadya.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "forbitask.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "proyek.png", widths: [320, 480, 640, 720, 960], quality: 84 },
+  { file: "simple.png", widths: [320, 480, 640, 720, 960], quality: 84 },
   { file: "logo-daysheet.png", widths: [96, 192], quality: 90 },
 ];
 

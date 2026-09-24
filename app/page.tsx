@@ -103,7 +103,7 @@ type GambarPratinjau = { sumber: string; label: string };
 function MediaProduk({ sumber, label, bukaGambar }: { sumber: string; label: string; bukaGambar: (gambar: GambarPratinjau) => void }) {
   const alamat = normalisasiAlamatGambar(sumber);
   // eslint-disable-next-line @next/next/no-img-element
-  if (alamat) return <div className="media-produk"><button className="tombol-gambar-produk" type="button" onClick={() => bukaGambar({ sumber: alamat, label })} aria-label={`Perbesar gambar ${label}`}><img src={gambarWebp(alamat, 480)} srcSet={srcSetWebp(alamat, [480, 960])} sizes="(max-width: 760px) calc(100vw - 48px), (max-width: 1200px) 46vw, 430px" alt={label} width="960" height="600" loading="lazy" decoding="async" /><span aria-hidden="true">Lihat gambar</span></button></div>;
+  if (alamat) return <div className="media-produk"><button className="tombol-gambar-produk" type="button" onClick={() => bukaGambar({ sumber: alamat, label })} aria-label={`Perbesar gambar ${label}`}><img src={gambarWebp(alamat, 480)} srcSet={srcSetWebp(alamat, [320, 480, 640, 720, 960])} sizes="(max-width: 760px) calc(100vw - 48px), (max-width: 1200px) 46vw, 430px" alt={label} width="960" height="600" loading="lazy" decoding="async" /><span aria-hidden="true">Lihat gambar</span></button></div>;
   return <div className="media-produk media-kosong" role="img" aria-label={`${label}, gambar belum tersedia`}><IkonGambar /><span>Gambar Produk</span></div>;
 }
 
@@ -121,7 +121,7 @@ function MockupMacbook() {
         <div className="gambar-hero">
           {/* File public dipanggil langsung agar tetap tampil pada runtime preview tanpa image optimizer. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          {gambarHero ? <img src={gambarWebp(gambarHero, 480)} srcSet={srcSetWebp(gambarHero, [480, 960])} sizes="(max-width: 760px) 78vw, 38vw" alt="Dashboard spreadsheet Daysheet pada layar MacBook" width="1124" height="804" loading="lazy" decoding="async" /> : <div className="gambar-hero-kosong"><IkonGambar /><span>Gambar Proyek</span><small>Tambahkan gambar Anda di variabel gambarHero</small></div>}
+          {gambarHero ? <img src={gambarWebp(gambarHero, 480)} srcSet={srcSetWebp(gambarHero, [320, 480, 640, 720, 960])} sizes="(max-width: 760px) 78vw, 38vw" alt="Dashboard spreadsheet Daysheet pada layar MacBook" width="1124" height="804" loading="lazy" decoding="async" /> : <div className="gambar-hero-kosong"><IkonGambar /><span>Gambar Proyek</span><small>Tambahkan gambar Anda di variabel gambarHero</small></div>}
         </div>
       </div>
       <div className="bodi-macbook" aria-hidden="true"><span /></div>
@@ -134,7 +134,7 @@ function DashboardHero() {
     <div className="visual-hero" aria-label="Laptop dengan pekerjaan spreadsheet yang kompleks dan berantakan">
       {/* Aset hero dibuat khusus untuk menggambarkan pekerjaan spreadsheet sebelum dirapikan Daysheet. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className="gambar-chaos-hero" src="/optimized/hero-chaos-spreadsheet-960.webp" srcSet="/optimized/hero-chaos-spreadsheet-640.webp 640w, /optimized/hero-chaos-spreadsheet-960.webp 960w, /optimized/hero-chaos-spreadsheet-1280.webp 1280w" sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 52vw, 680px" alt="Laptop dengan spreadsheet penuh tabel, sticky notes, kalkulator, dan kertas kerja" width="1536" height="1024" fetchPriority="high" />
+      <img className="gambar-chaos-hero" src="/optimized/hero-chaos-spreadsheet-720.webp" srcSet="/optimized/hero-chaos-spreadsheet-480.webp 480w, /optimized/hero-chaos-spreadsheet-640.webp 640w, /optimized/hero-chaos-spreadsheet-720.webp 720w, /optimized/hero-chaos-spreadsheet-960.webp 960w, /optimized/hero-chaos-spreadsheet-1280.webp 1280w" sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 52vw, 680px" alt="Laptop dengan spreadsheet penuh tabel, sticky notes, kalkulator, dan kertas kerja" width="1536" height="1024" fetchPriority="high" />
     </div>
   );
 }
