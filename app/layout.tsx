@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Daysheet",
   description: "Daysheet membantu bisnis membangun spreadsheet, dashboard, reporting, dan workflow automation yang rapi, efisien, dan mudah digunakan.",
   keywords: ["Daysheet", "Google Sheets", "Spreadsheet", "Dashboard", "Apps Script", "Automation"],
+  verification: {
+    google: "i37eE7r4YsBSh5h3peEClKV-mdhfqZN-r0omO828B9A",
+  },
   icons: {
     icon: [{ url: "/logo-daysheet.png", type: "image/png" }],
     shortcut: "/logo-daysheet.png",
