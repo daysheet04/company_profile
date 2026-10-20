@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: https://daysheet-id.netlify.app/sitemap.xml
+Sitemap: https://daysheet.my.id/sitemap.xml

@@ -37,7 +37,33 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PropertiHalaman): Promise<Metadata> {
   const { slug } = await params;
   const produk = daftarDemo.find((item) => item.slug === slug && item.demoSheet);
-  return { title: produk ? `Demo ${produk.nama} — Daysheet` : "Demo Produk — Daysheet" };
+  const judul = produk ? `Demo ${produk.nama} — Daysheet` : "Demo Produk — Daysheet";
+  const deskripsi = produk
+    ? `${produk.deskripsi} Coba langsung interactive demo spreadsheet di Daysheet.`
+    : "Interactive demo sistem spreadsheet Daysheet.";
+
+  return {
+    title: judul,
+    description: deskripsi,
+    alternates: {
+      canonical: `/demo/${encodeURIComponent(slug)}`,
+    },
+    openGraph: {
+      title: judul,
+      description: deskripsi,
+      url: `https://daysheet.my.id/demo/${encodeURIComponent(slug)}`,
+      siteName: "Daysheet",
+      locale: "id_ID",
+      type: "website",
+      images: produk?.gambar ? [{ url: produk.gambar }] : [{ url: "/Financev3.png" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: judul,
+      description: deskripsi,
+      images: produk?.gambar ? [produk.gambar] : ["/Financev3.png"],
+    },
+  };
 }
 
 export default async function HalamanDemo({ params }: PropertiHalaman) {

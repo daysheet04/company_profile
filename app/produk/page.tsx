@@ -5,7 +5,32 @@ import { gambarWebp, normalisasiAlamatGambar, srcSetWebp } from "../gambar-terop
 
 export const metadata: Metadata = {
   title: "Produk Daysheet — Template Spreadsheet Siap Pakai",
-  description: "Lihat seluruh produk template spreadsheet Daysheet beserta fungsi, fitur, demo, dan cara pemesanannya.",
+  description: "Lihat seluruh produk template spreadsheet Daysheet beserta fungsi, fitur, demo interaktif, dan cara pemesanannya.",
+  alternates: {
+    canonical: "/produk",
+  },
+  openGraph: {
+    title: "Produk Daysheet — Template Spreadsheet Siap Pakai",
+    description: "Lihat seluruh koleksi template spreadsheet Daysheet untuk personal finance, FnB, inventory, dan operasional bisnis.",
+    url: "https://daysheet.my.id/produk",
+    siteName: "Daysheet",
+    locale: "id_ID",
+    type: "website",
+    images: [
+      {
+        url: "/Financev3.png",
+        width: 1200,
+        height: 630,
+        alt: "Koleksi Template Spreadsheet Daysheet",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Produk Daysheet — Template Spreadsheet Siap Pakai",
+    description: "Lihat seluruh koleksi template spreadsheet Daysheet untuk personal finance, FnB, inventory, dan operasional bisnis.",
+    images: ["/Financev3.png"],
+  },
 };
 
 function Panah({ atas = false }: { atas?: boolean }) {
