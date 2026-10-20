@@ -68,8 +68,8 @@ h2 { margin-bottom: 0; font-size: clamp(43px, 5vw, 68px); font-weight: 650; lett
 .aksi-hero { display: flex; gap: 10px; margin-top: 36px; }
 .wadah-hero { align-self: center; }
 .visual-hero { position: relative; aspect-ratio: 3/2; overflow: hidden; border-radius: 34px; background: #dfe6e8; box-shadow: 0 24px 55px rgba(38,53,72,.13); }
-.gambar-chaos-hero { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform 1s var(--halus); }
-.visual-hero:hover .gambar-chaos-hero { transform: scale(1.025); }
+.gambar-chaos-hero { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.visual-hero:hover .gambar-chaos-hero { transform: scale(1.025); transition: transform 1s var(--halus); }
 .macbook-mockup { position: relative; z-index: 2; width: min(88%,1050px); filter: drop-shadow(0 32px 34px rgba(38,53,72,.22)); transform: perspective(1200px) rotateX(1.5deg) rotateY(-2deg); transition: transform .6s var(--halus); }
 .panggung-macbook:hover .macbook-mockup { transform: perspective(1200px) rotateX(0) rotateY(0) translateY(-5px); }
 .layar-macbook { position: relative; padding: 13px 13px 17px; border: 2px solid #626a73; border-bottom-width: 4px; border-radius: 22px 22px 10px 10px; background: linear-gradient(145deg,#2d333a,#11161c); box-shadow: inset 0 0 0 1px rgba(255,255,255,.14); }
@@ -351,7 +351,7 @@ h2 { margin-bottom: 0; font-size: clamp(43px, 5vw, 68px); font-weight: 650; lett
 /* Gerak */
 [data-tampil] { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .8s var(--halus); }
 [data-tampil].terlihat { opacity: 1; transform: none; }
-.hero [data-tampil] { opacity: 1; transform: none; }
+.hero [data-tampil] { opacity: 1; transform: none; transition: none; }
 @keyframes tabMasuk { from { opacity: 0; transform: translateY(14px); } }
 @keyframes lightboxMasuk { from { opacity: 0; } }
 

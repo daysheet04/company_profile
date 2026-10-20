@@ -134,7 +134,7 @@ function DashboardHero() {
     <div className="visual-hero" aria-label="Laptop dengan pekerjaan spreadsheet yang kompleks dan berantakan">
       {/* Aset hero dibuat khusus untuk menggambarkan pekerjaan spreadsheet sebelum dirapikan Daysheet. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className="gambar-chaos-hero" src="/optimized/hero-chaos-spreadsheet-720.webp" srcSet="/optimized/hero-chaos-spreadsheet-480.webp 480w, /optimized/hero-chaos-spreadsheet-640.webp 640w, /optimized/hero-chaos-spreadsheet-720.webp 720w, /optimized/hero-chaos-spreadsheet-960.webp 960w, /optimized/hero-chaos-spreadsheet-1280.webp 1280w" sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 52vw, 680px" alt="Laptop dengan spreadsheet penuh tabel, sticky notes, kalkulator, dan kertas kerja" width="1536" height="1024" fetchPriority="high" />
+      <img className="gambar-chaos-hero" src="/optimized/hero-chaos-spreadsheet-720.webp" srcSet="/optimized/hero-chaos-spreadsheet-480.webp 480w, /optimized/hero-chaos-spreadsheet-640.webp 640w, /optimized/hero-chaos-spreadsheet-720.webp 720w, /optimized/hero-chaos-spreadsheet-960.webp 960w, /optimized/hero-chaos-spreadsheet-1280.webp 1280w" sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 52vw, 680px" alt="Laptop dengan spreadsheet penuh tabel, sticky notes, kalkulator, dan kertas kerja" width="1536" height="1024" loading="eager" decoding="async" fetchPriority="high" />
     </div>
   );
 }
@@ -221,9 +221,9 @@ export default function Beranda() {
       </header>
 
       <section className="hero" id="beranda">
-        <div className="salinan-hero" data-tampil><span className="label-kecil">JASA SPREADSHEET & OTOMATISASI</span><h1><span>Masih Ribet</span><span>Bikin Spreadsheet</span><span>Dari Nol?</span></h1><p>Waktu yang harusnya bisa dipakai buat ngembangin bisnis malah kesita karena sibuk ngurus laporan penjualan, financial plan, inventory, dan berbagai pekerjaan administratif lainnya.
+        <div className="salinan-hero"><span className="label-kecil">JASA SPREADSHEET & OTOMATISASI</span><h1><span>Masih Ribet</span><span>Bikin Spreadsheet</span><span>Dari Nol?</span></h1><p>Waktu yang harusnya bisa dipakai buat ngembangin bisnis malah kesita karena sibuk ngurus laporan penjualan, financial plan, inventory, dan berbagai pekerjaan administratif lainnya.
           <br></br>Padahal, hal-hal ini memang penting. Tapi kalau terlalu banyak waktu habis cuma buat bikin dan ngatur spreadsheet, kapan bisnisnya mau berkembang?</p><div className="aksi-hero"><a className="tombol utama" href="#kontak">Konsultasikan Proyek <Panah arah="atas" /></a><a className="tombol sekunder" href="#portofolio">Lihat Portofolio <Panah /></a></div></div>
-        <div className="wadah-hero" data-tampil><DashboardHero /></div>
+        <div className="wadah-hero"><DashboardHero /></div>
       </section>
 
       <section className="transformasi bagian">
