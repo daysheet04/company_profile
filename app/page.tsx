@@ -134,7 +134,7 @@ function DashboardHero() {
     <div className="visual-hero" aria-label="Laptop dengan pekerjaan spreadsheet yang kompleks dan berantakan">
       {/* Aset hero dibuat khusus untuk menggambarkan pekerjaan spreadsheet sebelum dirapikan Daysheet. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className="gambar-chaos-hero" src="/optimized/hero-chaos-spreadsheet-720.webp" srcSet="/optimized/hero-chaos-spreadsheet-480.webp 480w, /optimized/hero-chaos-spreadsheet-640.webp 640w, /optimized/hero-chaos-spreadsheet-720.webp 720w, /optimized/hero-chaos-spreadsheet-960.webp 960w, /optimized/hero-chaos-spreadsheet-1280.webp 1280w" sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 52vw, 680px" alt="Laptop dengan spreadsheet penuh tabel, sticky notes, kalkulator, dan kertas kerja" width="1536" height="1024" loading="eager" decoding="async" fetchPriority="high" />
+      <img className="gambar-chaos-hero" src="/optimized/hero-chaos-spreadsheet-720.webp" srcSet="/optimized/hero-chaos-spreadsheet-480.webp 480w, /optimized/hero-chaos-spreadsheet-640.webp 640w, /optimized/hero-chaos-spreadsheet-720.webp 720w, /optimized/hero-chaos-spreadsheet-960.webp 960w, /optimized/hero-chaos-spreadsheet-1280.webp 1280w" sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1200px) 52vw, 680px" alt="Laptop dengan spreadsheet penuh tabel, sticky notes, kalkulator, dan kertas kerja" width="1536" height="1024" loading="eager" decoding="sync" fetchPriority="high" />
     </div>
   );
 }

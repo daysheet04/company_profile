@@ -21,7 +21,10 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+html { scroll-padding-top: 96px; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
 body { margin: 0; background: var(--cream); color: var(--navy); font-family: "Inter", "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
 body, button, input, textarea { font: inherit; }
 button, input, textarea { color: inherit; }
@@ -193,8 +196,8 @@ h2 { margin-bottom: 0; font-size: clamp(43px, 5vw, 68px); font-weight: 650; lett
 .panah-testimoni.kanan { right: 0; }
 .panah-testimoni:hover { background: var(--navy); color: white; transform: translateY(-50%) scale(1.06); }
 .panah-testimoni svg { width: 19px; }
-.jalur-testimoni { display: flex; gap: 12px; overflow-x: auto; padding: 3px 2px 10px; scroll-behavior: smooth; scroll-snap-type: x mandatory; scrollbar-width: none; cursor: grab; user-select: none; }
-.jalur-testimoni.sedang-diseret { cursor: grabbing; scroll-behavior: auto; scroll-snap-type: none; }
+.jalur-testimoni { display: flex; gap: 12px; overflow-x: auto; padding: 3px 2px 10px; scroll-snap-type: x mandatory; scrollbar-width: none; cursor: grab; user-select: none; }
+.jalur-testimoni.sedang-diseret { cursor: grabbing; scroll-snap-type: none; }
 .jalur-testimoni::-webkit-scrollbar { display: none; }
 .jalur-testimoni article { min-width: calc((100% - 24px) / 3); min-height: 310px; display: flex; flex-direction: column; align-items: center; padding: 30px 26px; border-radius: 21px; background: rgba(252,251,248,.78); scroll-snap-align: start; }
 .rating-testimoni { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--sekunder); font-size: 11px; font-weight: 750; }
@@ -406,6 +409,8 @@ h2 { margin-bottom: 0; font-size: clamp(43px, 5vw, 68px); font-weight: 650; lett
   .rincian-studi { grid-template-columns: repeat(3,1fr); }
   .tag-teknologi { grid-column: 1/-1; }
   .salinan-klien { max-width: 750px; }
+  .carousel-testimoni { padding-inline: 46px; }
+  .jalur-testimoni article { min-width: calc(100% - 8px); }
   .kontak { grid-template-columns: 1fr; }
   .salinan-kontak { max-width: 750px; }
   .form-kontak { width: min(100%,680px); }
